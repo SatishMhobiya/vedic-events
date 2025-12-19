@@ -6,27 +6,27 @@ const About = () => {
   const stats = [
     {
       icon: <FaHeart />,
-      number: "500+",
-      label: "Weddings Planned",
-      color: "#F4D03F"
+      number: "1000+",
+      label: "Events Delivered",
+      color: "#D4AF37"
     },
     {
       icon: <FaUsers />,
-      number: "1000+",
+      number: "2500+",
       label: "Happy Clients",
-      color: "#2D5016"
+      color: "#9D2235"
     },
     {
       icon: <FaStar />,
       number: "4.9",
       label: "Average Rating",
-      color: "#F4D03F"
+      color: "#D4AF37"
     },
     {
       icon: <FaAward />,
       number: "50+",
       label: "Industry Awards",
-      color: "#2D5016"
+      color: "#9D2235"
     }
   ];
 
@@ -35,37 +35,38 @@ const About = () => {
       <div className="section">
         <div className="about-content">
           <div className="about-text">
-            <h2 className="section-title-left">Creating Dream Weddings Since 2015</h2>
+            <h2 className="section-title-left">Get An Unforgettable Event Experience With Us</h2>
             <p className="about-description">
-              At <strong>Blissful Events</strong>, we believe that every love story deserves a perfect celebration. 
-              With over 8 years of experience in wedding planning and event management, we have transformed 
-              countless dreams into reality.
+              At <strong>Vedic Events</strong>, we take immense pride in our position as a leading event management company, 
+              specializing in weddings, corporate events, and cultural celebrations. Since our establishment in 2015, 
+              we have successfully executed over <strong>1000+ memorable events</strong>, leaving behind a trail of 
+              delighted clients across the country.
             </p>
             <p className="about-description">
-              Our team of expert planners, decorators, and coordinators work tirelessly to ensure every detail 
-              of your special day is executed flawlessly. From intimate garden ceremonies to grand destination 
-              weddings, we handle it all with professionalism, creativity, and love.
+              Our experienced team of planners, decorators, and coordinators work tirelessly to ensure every detail 
+              is executed flawlessly. We don't just plan events – we create experiences that resonate with your vision 
+              and exceed your expectations. Your smiling satisfaction is our ultimate goal.
             </p>
             <div className="about-features">
               <div className="feature-item">
                 <div className="feature-icon">✓</div>
                 <div>
-                  <h4>Expert Planning Team</h4>
-                  <p>Certified wedding planners with years of experience</p>
+                  <h4>Your Vision, Our Awesome Execution</h4>
+                  <p>Expert team transforming your ideas into reality</p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-icon">✓</div>
                 <div>
-                  <h4>End-to-End Service</h4>
-                  <p>From venue selection to final send-off</p>
+                  <h4>Where Awesome Happens, Every Occasion</h4>
+                  <p>Creating unforgettable moments for all celebrations</p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-icon">✓</div>
                 <div>
-                  <h4>Personalized Approach</h4>
-                  <p>Custom packages tailored to your vision and budget</p>
+                  <h4>Experienced Team - Your Smiling Support</h4>
+                  <p>9+ years of excellence with 1000+ successful events</p>
                 </div>
               </div>
             </div>
@@ -76,7 +77,7 @@ const About = () => {
               alt="Wedding Planning" 
             />
             <div className="image-overlay">
-              <p>Your Dream Wedding Awaits</p>
+              <p>Excellence in Every Event</p>
             </div>
           </div>
         </div>

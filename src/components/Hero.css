@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   background-image: 
-    linear-gradient(135deg, rgba(45, 80, 22, 0.85) 0%, rgba(74, 124, 44, 0.85) 100%),
+    linear-gradient(135deg, rgba(157, 34, 53, 0.88) 0%, rgba(125, 26, 43, 0.88) 100%),
     url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&h=1080&fit=crop');
   background-size: cover;
   background-position: center;
@@ -21,8 +21,8 @@
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(244, 208, 63, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(244, 208, 63, 0.15) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 107, 53, 0.15) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -55,10 +55,16 @@
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
   margin-bottom: 15px;
   font-weight: 500;
   animation: fadeInUp 0.8s ease 0.2s backwards;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-tagline-animated {
+  transition: opacity 0.5s ease-in-out;
+  min-height: 1.8rem;
 }
 
 .hero-description {
@@ -90,27 +96,27 @@
 }
 
 .hero-btn.primary {
-  background-color: var(--primary-green);
+  background-color: var(--primary-saffron);
   color: var(--white);
-  box-shadow: 0 4px 20px rgba(45, 80, 22, 0.3);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
 }
 
 .hero-btn.primary:hover {
-  background-color: var(--light-green);
+  background-color: var(--light-saffron);
   transform: translateY(-3px);
-  box-shadow: 0 6px 25px rgba(45, 80, 22, 0.4);
+  box-shadow: 0 6px 25px rgba(255, 107, 53, 0.5);
 }
 
 .hero-btn.secondary {
-  background-color: var(--primary-yellow);
-  color: var(--primary-green);
-  box-shadow: 0 4px 20px rgba(244, 208, 63, 0.3);
+  background-color: var(--primary-gold);
+  color: var(--primary-maroon);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
 }
 
 .hero-btn.secondary:hover {
-  background-color: var(--soft-yellow);
+  background-color: var(--soft-gold);
   transform: translateY(-3px);
-  box-shadow: 0 6px 25px rgba(244, 208, 63, 0.4);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
 }
 
 .hero-stats {
@@ -126,18 +132,20 @@
 
 .stat-icon {
   font-size: 2.5rem;
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
   margin-bottom: 10px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
 }
 
 .stat h3 {
   font-size: 2rem;
   color: var(--white);
   margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .stat p {
-  color: var(--soft-yellow);
+  color: var(--soft-gold);
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -153,37 +161,119 @@
   }
 }
 
+@media (max-width: 968px) {
+  .hero {
+    min-height: 85vh;
+    background-attachment: scroll;
+  }
+
+  .hero-content {
+    padding: 30px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-stats {
+    gap: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: 80vh;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .hero-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 0 10px;
   }
 
   .hero-buttons {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   .hero-btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    padding: 14px 30px;
   }
 
   .hero-stats {
     flex-direction: column;
+    gap: 35px;
+  }
+
+  .stat-icon {
+    font-size: 2.2rem;
+  }
+
+  .stat h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 75vh;
+  }
+
+  .hero-content {
+    padding: 25px 15px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
+  }
+
+  .hero-btn {
+    max-width: 260px;
+    padding: 12px 25px;
+    font-size: 0.95rem;
+  }
+
+  .hero-stats {
     gap: 30px;
+  }
+
+  .stat-icon {
+    font-size: 2rem;
+  }
+
+  .stat h3 {
+    font-size: 1.6rem;
+  }
+
+  .stat p {
+    font-size: 0.85rem;
   }
 }
 

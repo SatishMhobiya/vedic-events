@@ -5,17 +5,37 @@
 }
 
 :root {
-  --primary-green: #2D5016;
-  --light-green: #4A7C2C;
-  --soft-green: #6B9E4D;
-  --pale-green: #E8F5E1;
-  --primary-yellow: #F4D03F;
-  --soft-yellow: #F9E79F;
-  --pale-yellow: #FEF9E7;
-  --dark-text: #1C2833;
-  --light-text: #566573;
+  /* Vedic-inspired Professional Color Palette */
+  --primary-saffron: #FF6B35;
+  --deep-saffron: #E85D25;
+  --light-saffron: #FF8C5F;
+  --pale-saffron: #FFF3EE;
+  
+  --primary-gold: #D4AF37;
+  --rich-gold: #B8941E;
+  --soft-gold: #E8C851;
+  --pale-gold: #FFF8E7;
+  
+  --primary-maroon: #9D2235;
+  --deep-maroon: #7D1A2B;
+  --light-maroon: #B83B4F;
+  --pale-maroon: #FFE8EC;
+  
+  --royal-purple: #7851A9;
+  --deep-purple: #5C3D7F;
+  --light-purple: #9B7DC2;
+  --pale-purple: #F3EEFF;
+  
+  --cream: #FFF8DC;
+  --ivory: #FFFEF7;
   --white: #FFFFFF;
-  --shadow: rgba(0, 0, 0, 0.1);
+  
+  --dark-text: #2C1810;
+  --light-text: #5D4E37;
+  --medium-text: #8B7355;
+  
+  --shadow: rgba(157, 34, 53, 0.1);
+  --shadow-dark: rgba(157, 34, 53, 0.15);
 }
 
 body {

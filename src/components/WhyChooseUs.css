@@ -1,0 +1,176 @@
+.why-choose-section {
+  background: linear-gradient(180deg, var(--white) 0%, var(--pale-green) 100%);
+  padding: 80px 0;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.reason-card {
+  background: var(--white);
+  padding: 35px 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-yellow);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.reason-icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.reason-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.reason-card:hover .reason-icon {
+  background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--soft-yellow) 100%);
+  color: var(--primary-green);
+  transform: scale(1.1);
+}
+
+.reason-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary-green);
+  margin-bottom: 15px;
+}
+
+.reason-card p {
+  color: var(--light-text);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.cta-banner {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  border-radius: 25px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(45, 80, 22, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(244, 208, 63, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-banner h3 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.cta-banner p {
+  font-size: 1.2rem;
+  color: var(--soft-yellow);
+  margin-bottom: 35px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-btn {
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-btn.primary {
+  background-color: var(--primary-yellow);
+  color: var(--primary-green);
+  box-shadow: 0 4px 20px rgba(244, 208, 63, 0.4);
+}
+
+.cta-btn.primary:hover {
+  background-color: var(--soft-yellow);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(244, 208, 63, 0.5);
+}
+
+.cta-btn.secondary {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.cta-btn.secondary:hover {
+  background-color: var(--white);
+  color: var(--primary-green);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1200px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner {
+    padding: 40px 25px;
+  }
+
+  .cta-banner h3 {
+    font-size: 1.8rem;
+  }
+
+  .cta-banner p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+

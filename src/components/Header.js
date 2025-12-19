@@ -27,12 +27,12 @@ const Header = () => {
         
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
-            <li><a onClick={() => scrollToSection('home')}>Home</a></li>
-            <li><a onClick={() => scrollToSection('about')}>About</a></li>
-            <li><a onClick={() => scrollToSection('packages')}>Packages</a></li>
-            <li><a onClick={() => scrollToSection('gallery')}>Gallery</a></li>
-            <li><a onClick={() => scrollToSection('testimonials')}>Testimonials</a></li>
-            <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
+            <li><button type="button" onClick={() => scrollToSection('home')}>Home</button></li>
+            <li><button type="button" onClick={() => scrollToSection('about')}>About</button></li>
+            <li><button type="button" onClick={() => scrollToSection('packages')}>Packages</button></li>
+            <li><button type="button" onClick={() => scrollToSection('gallery')}>Gallery</button></li>
+            <li><button type="button" onClick={() => scrollToSection('testimonials')}>Testimonials</button></li>
+            <li><button type="button" onClick={() => scrollToSection('contact')}>Contact</button></li>
           </ul>
         </nav>
 

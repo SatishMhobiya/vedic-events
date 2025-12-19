@@ -106,8 +106,6 @@ const Gallery = () => {
     }
   ];
 
-  const categories = ['all', 'images', 'videos', 'wedding', 'corporate', 'social', 'cultural'];
-
   const filteredItems = galleryItems.filter(item => {
     if (activeFilter === 'all') return true;
     if (activeFilter === 'images') return item.type === 'image';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCheckCircle, FaPalette, FaHeadset, FaMoneyBillWave, FaClock, FaAward, FaUsers, FaShieldAlt } from 'react-icons/fa';
+import { FaCheckCircle, FaPalette, FaHeadset, FaClock, FaAward, FaUsers, FaShieldAlt } from 'react-icons/fa';
 import './WhyChooseUs.css';
 
 const WhyChooseUs = () => {

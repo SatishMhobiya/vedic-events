@@ -1,12 +1,13 @@
 .header {
-  background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
-  color: var(--white);
+  background: var(--light-cream);
+  color: var(--primary-text);
   padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 15px var(--shadow-dark);
+  box-shadow: 0 2px 8px var(--shadow);
   transition: padding 0.3s ease;
+  border-bottom: 1px solid rgba(201, 169, 97, 0.2);
 }
 
 .header-container {
@@ -30,12 +31,12 @@
 .logo-image {
   height: 65px;
   width: auto;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
-  transition: filter 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .logo:hover .logo-image {
-  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+  transform: scale(1.02);
+  filter: drop-shadow(2px 2px 6px rgba(201, 169, 97, 0.3));
 }
 
 .nav-list {
@@ -48,9 +49,11 @@
 .nav-list li button {
   background: none;
   border: none;
-  color: var(--white);
-  font-weight: 500;
-  font-size: 1rem;
+  color: var(--secondary-text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
@@ -78,20 +81,23 @@
 }
 
 .cta-button {
-  background-color: var(--primary-gold);
-  color: var(--primary-maroon);
+  background-color: var(--bronze-gold);
+  color: var(--pure-white);
   border: none;
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 12px 28px;
+  border-radius: 30px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 12px var(--gold-shadow);
 }
 
 .cta-button:hover {
-  background-color: var(--soft-gold);
+  background-color: var(--primary-gold);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+  box-shadow: 0 6px 18px var(--gold-shadow);
 }
 
 .menu-toggle {
@@ -117,10 +123,11 @@
     left: -100%;
     width: 100%;
     height: calc(100vh - 76px);
-    background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
+    background: var(--light-cream);
     transition: left 0.3s ease;
     padding: 40px 0;
     overflow-y: auto;
+    border-top: 1px solid var(--pale-gold);
   }
 
   .nav.active {
@@ -141,6 +148,7 @@
     display: block;
     padding: 8px;
     z-index: 1001;
+    color: var(--primary-text);
   }
 
   .cta-button {
@@ -155,6 +163,7 @@
 
   .logo-image {
     height: 50px;
+    padding: 4px;
   }
 
   .nav {

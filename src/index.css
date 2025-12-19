@@ -5,44 +5,69 @@
 }
 
 :root {
-  /* Vedic-inspired Professional Color Palette */
-  --primary-saffron: #FF6B35;
-  --deep-saffron: #E85D25;
-  --light-saffron: #FF8C5F;
-  --pale-saffron: #FFF3EE;
+  /* Elegant Vedic Palette - Cream, Gold & Rich Brown */
   
-  --primary-gold: #D4AF37;
-  --rich-gold: #B8941E;
-  --soft-gold: #E8C851;
-  --pale-gold: #FFF8E7;
+  /* Primary Rich Brown - Sophistication, Warmth, Tradition */
+  --primary-brown: #3E2723;
+  --deep-brown: #2C1810;
+  --medium-brown: #5D4037;
+  --light-brown: #8D6E63;
+  --pale-brown: #EFEBE9;
   
-  --primary-maroon: #9D2235;
-  --deep-maroon: #7D1A2B;
-  --light-maroon: #B83B4F;
-  --pale-maroon: #FFE8EC;
+  /* Accent Gold/Bronze - Luxury, Celebration, Elegance */
+  --primary-gold: #C9A961;
+  --antique-gold: #B8941E;
+  --bronze-gold: #CD9A4D;
+  --soft-gold: #D4B76A;
+  --light-gold: #E8D4A0;
+  --pale-gold: #FAF5E8;
   
-  --royal-purple: #7851A9;
-  --deep-purple: #5C3D7F;
-  --light-purple: #9B7DC2;
-  --pale-purple: #F3EEFF;
+  /* Background Colors - Warm & Elegant */
+  --cream: #F5F1E8;
+  --light-cream: #FAF8F3;
+  --warm-cream: #F9F6F0;
+  --off-white: #FDFCFA;
+  --pure-white: #FFFFFF;
   
-  --cream: #FFF8DC;
-  --ivory: #FFFEF7;
-  --white: #FFFFFF;
-  
+  /* Text Colors - Rich & Readable */
   --dark-text: #2C1810;
-  --light-text: #5D4E37;
-  --medium-text: #8B7355;
+  --primary-text: #3E2723;
+  --secondary-text: #5D4037;
+  --light-text: #8D6E63;
+  --muted-text: #A1887F;
   
-  --shadow: rgba(157, 34, 53, 0.1);
-  --shadow-dark: rgba(157, 34, 53, 0.15);
+  /* Accent Colors */
+  --warm-copper: #B87333;
+  --bronze: #CD7F32;
+  --terra-cotta: #A0522D;
+  
+  /* Shadows - Warm Tones */
+  --shadow: rgba(62, 39, 35, 0.08);
+  --shadow-medium: rgba(62, 39, 35, 0.12);
+  --shadow-dark: rgba(62, 39, 35, 0.18);
+  --gold-shadow: rgba(201, 169, 97, 0.3);
+  
+  /* Legacy aliases for backward compatibility */
+  --primary-burgundy: var(--primary-brown);
+  --deep-burgundy: var(--deep-brown);
+  --light-burgundy: var(--light-brown);
+  --primary-maroon: var(--primary-brown);
+  --deep-maroon: var(--deep-brown);
+  --light-maroon: var(--light-brown);
+  --primary-navy: var(--primary-brown);
+  --deep-navy: var(--deep-brown);
+  --charcoal: var(--primary-text);
+  --dark-charcoal: var(--dark-text);
+  --ivory: var(--warm-cream);
+  --white: var(--pure-white);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--dark-text);
+  color: var(--primary-text);
+  background-color: var(--light-cream);
   line-height: 1.6;
 }
 

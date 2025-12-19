@@ -1,17 +1,17 @@
 import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import './Footer.css';
+import logo from '../assets/images/vedic_events_logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer" id="contact">
       <div className="footer-content">
         <div className="footer-section">
-          <h3 className="footer-logo">Blissful Events</h3>
-          <p className="footer-tagline">Making Memories Forever</p>
+          <img src={logo} alt="Vedic Events Logo" className="footer-logo-image" />
           <p className="footer-description">
-            Your trusted partner in creating unforgettable wedding experiences. 
-            We turn your dreams into reality with elegance and perfection.
+            Your trusted partner in creating unforgettable event experiences. 
+            We turn your vision into reality with elegance and perfection.
           </p>
           <div className="social-links">
             <a href="https://facebook.com" className="social-icon" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
@@ -38,12 +38,12 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Our Services</h4>
           <ul className="footer-links">
+            <li><a href="#packages">Corporate Events</a></li>
             <li><a href="#packages">Wedding Planning</a></li>
-            <li><a href="#packages">Venue Decoration</a></li>
+            <li><a href="#packages">Cultural Celebrations</a></li>
+            <li><a href="#packages">Venue Management</a></li>
             <li><a href="#packages">Catering Services</a></li>
-            <li><a href="#packages">Photography</a></li>
-            <li><a href="#packages">Event Management</a></li>
-            <li><a href="#packages">Destination Weddings</a></li>
+            <li><a href="#packages">Complete Event Solutions</a></li>
           </ul>
         </div>
 
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
-              <span>info@blissfulevents.com</span>
+              <span>info@vedicevents.com</span>
             </div>
             <div className="contact-item">
               <FaMapMarkerAlt className="contact-icon" />
@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Blissful Events. All rights reserved.</p>
+        <p>&copy; 2025 Vedic Events. All rights reserved.</p>
         <div className="footer-bottom-links">
           <a href="/privacy-policy">Privacy Policy</a>
           <span>|</span>

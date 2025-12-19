@@ -5,24 +5,69 @@
 }
 
 :root {
-  --primary-green: #2D5016;
-  --light-green: #4A7C2C;
-  --soft-green: #6B9E4D;
-  --pale-green: #E8F5E1;
-  --primary-yellow: #F4D03F;
-  --soft-yellow: #F9E79F;
-  --pale-yellow: #FEF9E7;
-  --dark-text: #1C2833;
-  --light-text: #566573;
-  --white: #FFFFFF;
-  --shadow: rgba(0, 0, 0, 0.1);
+  /* Elegant Vedic Palette - Cream, Gold & Rich Brown */
+  
+  /* Primary Rich Brown - Sophistication, Warmth, Tradition */
+  --primary-brown: #3E2723;
+  --deep-brown: #2C1810;
+  --medium-brown: #5D4037;
+  --light-brown: #8D6E63;
+  --pale-brown: #EFEBE9;
+  
+  /* Accent Gold/Bronze - Luxury, Celebration, Elegance */
+  --primary-gold: #C9A961;
+  --antique-gold: #B8941E;
+  --bronze-gold: #CD9A4D;
+  --soft-gold: #D4B76A;
+  --light-gold: #E8D4A0;
+  --pale-gold: #FAF5E8;
+  
+  /* Background Colors - Warm & Elegant */
+  --cream: #F5F1E8;
+  --light-cream: #FAF8F3;
+  --warm-cream: #F9F6F0;
+  --off-white: #FDFCFA;
+  --pure-white: #FFFFFF;
+  
+  /* Text Colors - Rich & Readable */
+  --dark-text: #2C1810;
+  --primary-text: #3E2723;
+  --secondary-text: #5D4037;
+  --light-text: #8D6E63;
+  --muted-text: #A1887F;
+  
+  /* Accent Colors */
+  --warm-copper: #B87333;
+  --bronze: #CD7F32;
+  --terra-cotta: #A0522D;
+  
+  /* Shadows - Warm Tones */
+  --shadow: rgba(62, 39, 35, 0.08);
+  --shadow-medium: rgba(62, 39, 35, 0.12);
+  --shadow-dark: rgba(62, 39, 35, 0.18);
+  --gold-shadow: rgba(201, 169, 97, 0.3);
+  
+  /* Legacy aliases for backward compatibility */
+  --primary-burgundy: var(--primary-brown);
+  --deep-burgundy: var(--deep-brown);
+  --light-burgundy: var(--light-brown);
+  --primary-maroon: var(--primary-brown);
+  --deep-maroon: var(--deep-brown);
+  --light-maroon: var(--light-brown);
+  --primary-navy: var(--primary-brown);
+  --deep-navy: var(--deep-brown);
+  --charcoal: var(--primary-text);
+  --dark-charcoal: var(--dark-text);
+  --ivory: var(--warm-cream);
+  --white: var(--pure-white);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--dark-text);
+  color: var(--primary-text);
+  background-color: var(--light-cream);
   line-height: 1.6;
 }
 

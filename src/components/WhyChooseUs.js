@@ -5,53 +5,53 @@ import './WhyChooseUs.css';
 const WhyChooseUs = () => {
   const reasons = [
     {
-      icon: <FaCheckCircle />,
-      title: "100% Satisfaction Guarantee",
-      description: "We don't stop until you're completely satisfied with every detail of your wedding"
+      icon: <FaUsers />,
+      title: "Friendly Team",
+      description: "Where friendliness meets excellence - our team ensures you're comfortable throughout"
     },
     {
       icon: <FaPalette />,
-      title: "Creative Excellence",
-      description: "Innovative designs and themes that make your wedding unique and memorable"
+      title: "The Best Venues",
+      description: "Access to premium venues that elevate your event experience"
     },
     {
       icon: <FaHeadset />,
-      title: "24/7 Support",
-      description: "Round-the-clock assistance throughout your wedding planning journey"
+      title: "One Call Service",
+      description: "Single point of contact for all your event needs - simple and efficient"
     },
     {
-      icon: <FaMoneyBillWave />,
-      title: "Best Value Packages",
-      description: "Competitive pricing without compromising on quality and luxury"
+      icon: <FaCheckCircle />,
+      title: "One Stop Solutions",
+      description: "Complete end-to-end event management under one roof"
     },
     {
-      icon: <FaClock />,
-      title: "Timely Execution",
-      description: "Punctual setup and flawless execution on your special day"
+      icon: <FaPalette />,
+      title: "Unique Scenarios",
+      description: "Creative, customized themes that make your event truly distinctive"
     },
     {
       icon: <FaAward />,
-      title: "Award-Winning Team",
-      description: "Industry-recognized planners with 50+ awards and accolades"
+      title: "Awesome Events",
+      description: "Crafting unforgettable event experiences that exceed expectations"
     },
     {
-      icon: <FaUsers />,
-      title: "Experienced Professionals",
-      description: "8+ years of experience with 500+ successfully planned weddings"
+      icon: <FaClock />,
+      title: "Proven Track Record",
+      description: "9+ years of excellence with 1000+ successfully executed events"
     },
     {
       icon: <FaShieldAlt />,
-      title: "Trusted & Reliable",
-      description: "Licensed, insured, and committed to making your day perfect"
+      title: "Trusted & Professional",
+      description: "Reliable service backed by industry expertise and client satisfaction"
     }
   ];
 
   return (
     <section className="why-choose-section">
       <div className="section">
-        <h2 className="section-title">Why Choose Blissful Events?</h2>
+        <h2 className="section-title">Why Choose Vedic Events?</h2>
         <p className="section-subtitle">
-          We're not just wedding planners – we're dream makers who turn your vision into reality
+          We're not just event planners – we're experience creators who bring your vision to life
         </p>
 
         <div className="reasons-grid">
@@ -68,8 +68,8 @@ const WhyChooseUs = () => {
 
         <div className="cta-banner">
           <div className="cta-content">
-            <h3>Ready to Plan Your Dream Wedding?</h3>
-            <p>Let's create magical moments together. Book your free consultation today!</p>
+            <h3>Ready to Plan Your Dream Event?</h3>
+            <p>Let's create extraordinary experiences together. Book your free consultation today!</p>
             <div className="cta-buttons">
               <button className="cta-btn primary">Schedule Free Consultation</button>
               <button className="cta-btn secondary">Download Brochure</button>

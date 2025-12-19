@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Header.css';
+import logo from '../assets/images/vedic_events_logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +21,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
-          <h1>Blissful Events</h1>
-          <p className="tagline">Making Memories Forever</p>
+        <div className="logo" onClick={() => scrollToSection('home')}>
+          <img src={logo} alt="Vedic Events Logo" className="logo-image" />
         </div>
         
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>

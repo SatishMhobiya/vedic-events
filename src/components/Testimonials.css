@@ -1,5 +1,5 @@
 .testimonials-section {
-  background: linear-gradient(180deg, var(--pale-yellow) 0%, var(--white) 100%);
+  background: linear-gradient(180deg, var(--pale-gold) 0%, var(--white) 100%);
   padding: 80px 0;
 }
 
@@ -16,13 +16,13 @@
   box-shadow: 0 5px 25px var(--shadow);
   position: relative;
   transition: all 0.3s ease;
-  border: 2px solid var(--pale-green);
+  border: 2px solid var(--pale-saffron);
 }
 
 .testimonial-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  border-color: var(--primary-yellow);
+  box-shadow: 0 10px 40px rgba(157, 34, 53, 0.2);
+  border-color: var(--primary-gold);
 }
 
 .quote-icon {
@@ -30,7 +30,7 @@
   top: 20px;
   right: 20px;
   font-size: 3rem;
-  color: var(--pale-yellow);
+  color: var(--pale-gold);
   opacity: 0.5;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .star-icon {
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
   font-size: 1.2rem;
 }
 
@@ -58,7 +58,7 @@
   gap: 15px;
   align-items: center;
   padding-top: 20px;
-  border-top: 2px solid var(--pale-green);
+  border-top: 2px solid var(--pale-saffron);
 }
 
 .testimonial-author img {
@@ -66,11 +66,11 @@
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--primary-yellow);
+  border: 3px solid var(--primary-gold);
 }
 
 .author-info h4 {
-  color: var(--primary-green);
+  color: var(--primary-maroon);
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
@@ -82,9 +82,16 @@
 }
 
 .event-date {
-  color: var(--soft-green);
+  color: var(--primary-saffron);
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+@media (max-width: 968px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -93,7 +100,36 @@
   }
 
   .testimonial-card {
-    padding: 25px;
+    padding: 30px 25px;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .author-info h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: 25px 20px;
+  }
+
+  .quote-icon {
+    font-size: 2.5rem;
+  }
+
+  .testimonial-author {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .testimonial-author img {
+    width: 55px;
+    height: 55px;
   }
 }
 

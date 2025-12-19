@@ -13,40 +13,40 @@ const Packages = () => {
       image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=400&fit=crop",
       guests: "Up to 100 Guests",
       features: [
-        "Beautiful Garden Venue Setup",
-        "Basic Haldi & Mehndi Decoration",
-        "Simple Stage Setup with Basic Lighting",
-        "Vegetarian Catering (3 Course Menu)",
-        "Traditional Entry Decor",
-        "Basic Sound System",
-        "Standard Chairs & Tables",
-        "3 Hours Event Coordination"
+        "Beautiful Venue Setup & Decoration",
+        "Basic Stage Setup with Lighting",
+        "Multi-Cuisine Catering (3 Course Menu)",
+        "Professional Entry Decor",
+        "Standard Sound System",
+        "Quality Chairs & Tables",
+        "Event Coordination (3 Hours)",
+        "Basic Photography Coverage"
       ],
-      color: "#C0C0C0"
+      color: "#FF6B35"
     },
     {
       id: 2,
       name: "Gold Package",
       price: "₹5,00,000",
-      description: "Most popular choice for perfect weddings",
+      description: "Most popular choice for perfect celebrations",
       icon: <FaPalette />,
       featured: true,
       image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=400&fit=crop",
       guests: "Up to 200 Guests",
       features: [
-        "Premium Garden Venue with Landscaping",
-        "Elegant Haldi & Mehndi Setup with Props & Seating",
-        "Grand Mahila Sangeet Stage with Professional Lighting",
-        "Premium Multi-Cuisine Catering (5 Course Menu)",
-        "Royal Entry Gate with Fresh Floral Decoration",
-        "Professional Photography (8 hours) + 300 Edited Photos",
-        "Live Music Band for Sangeet",
+        "Premium Venue with Custom Theming",
+        "Elegant Stage Design with Advanced Lighting",
+        "Gourmet Multi-Cuisine Catering (5 Course Menu)",
+        "Grand Entry with Floral Decoration",
+        "Professional Photography & Videography (8 hours)",
+        "Live Entertainment & Music",
         "Premium Sound & Lighting System",
-        "Designer Chairs, Tables & Linen",
-        "Full Day Event Coordination",
-        "Welcome Drinks & Refreshments"
+        "Designer Furniture & Linen",
+        "Full Day Event Management",
+        "Welcome Drinks & Refreshments",
+        "Digital Invitations & Event Website"
       ],
-      color: "#FFD700"
+      color: "#D4AF37"
     },
     {
       id: 3,
@@ -57,59 +57,59 @@ const Packages = () => {
       image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop",
       guests: "500+ Guests",
       features: [
-        "Luxury Garden Resort / Destination Venue",
-        "Designer Theme-Based Haldi & Mehndi Setup",
-        "Grand Mahila Sangeet with Celebrity Performance",
-        "International Multi-Cuisine Catering (7 Course Gourmet)",
-        "Magnificent Entry with Car/Elephant Decoration",
+        "Luxury Resort / Destination Venue",
+        "Bespoke Designer Theme & Decor",
+        "International Gourmet Catering (7 Course Menu)",
+        "Celebrity Entertainment & Performances",
         "Cinematic Photography & Videography (Full Coverage)",
-        "Live Band, DJ & Professional Dancers",
-        "Complete Event Management Team (10+ Members)",
-        "Destination Wedding Planning & Coordination",
-        "Premium Decor with Imported Flowers",
+        "Live Band, DJ & Professional Performers",
+        "Complete Event Management Team (15+ Members)",
+        "Destination Event Planning & Coordination",
+        "Premium Decor with Imported Materials",
         "Valet Parking & Guest Transportation",
         "Luxury Accommodation Arrangements",
-        "Pre-Wedding Photoshoot",
-        "Wedding Website & Digital Invitations"
+        "Pre-Event Photoshoot & Video",
+        "Custom Event Website & Digital Solutions",
+        "VIP Guest Management Services"
       ],
-      color: "#E5E4E2"
+      color: "#9D2235"
     }
   ];
 
   const services = [
     {
       icon: <FaLeaf />,
-      title: "Garden Venues",
-      description: "Beautiful outdoor settings with lush greenery and scenic beauty"
+      title: "Venue Selection",
+      description: "Premium venues ranging from outdoor gardens to luxury banquet halls"
     },
     {
       icon: <FaPalette />,
-      title: "Haldi & Mehndi",
-      description: "Traditional setups with vibrant colors, comfortable seating, and authentic decor"
+      title: "Event Design",
+      description: "Custom themes and decor tailored to your vision and culture"
     },
     {
       icon: <FaMusic />,
-      title: "Mahila Sangeet",
-      description: "Grand stage setup with professional lighting, sound system, and dance floor"
+      title: "Entertainment",
+      description: "Professional entertainment including live music, DJ, and performances"
     },
     {
       icon: <FaUtensils />,
       title: "Catering Services",
-      description: "Delicious multi-cuisine menu prepared by expert chefs"
+      description: "Exquisite multi-cuisine menus crafted by expert chefs"
     },
     {
       icon: <FaDoorOpen />,
-      title: "Grand Entry",
-      description: "Spectacular entrance decorations that make a lasting impression"
+      title: "Full-Service Management",
+      description: "End-to-end event coordination from planning to execution"
     }
   ];
 
   return (
     <section className="packages-section" id="packages">
       <div className="section">
-        <h2 className="section-title">Our Wedding Packages</h2>
+        <h2 className="section-title">Our Event Packages</h2>
         <p className="section-subtitle">
-          Choose from our carefully curated packages designed to make your special day unforgettable
+          Choose from our carefully curated packages designed to make your event extraordinary
         </p>
 
         <div className="packages-grid">

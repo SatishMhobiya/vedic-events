@@ -9,7 +9,7 @@ const Testimonials = () => {
       name: "Priya & Rahul Sharma",
       image: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=200&h=200&fit=crop&crop=faces",
       rating: 5,
-      text: "Blissful Events made our dream wedding come true! From the stunning garden venue to the beautiful Haldi ceremony setup, everything was perfect. The team's attention to detail and professionalism is unmatched. Highly recommended!",
+      text: "Vedic Events made our dream wedding come true! From the stunning garden venue to the beautiful traditional ceremony setup, everything was perfect. The team's attention to detail and professionalism is unmatched. Highly recommended!",
       event: "Garden Wedding - Mumbai",
       date: "December 2024"
     },
@@ -27,7 +27,7 @@ const Testimonials = () => {
       name: "Neha & Arjun Mehta",
       image: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=200&h=200&fit=crop&crop=faces",
       rating: 5,
-      text: "Outstanding service from start to finish! The team handled everything professionally - from the Mehndi setup to the grand entry. They understood our vision perfectly and exceeded our expectations. Our wedding was magical thanks to Blissful Events!",
+      text: "Outstanding service from start to finish! The team handled everything professionally - from the ceremony setup to the grand entry. They understood our vision perfectly and exceeded our expectations. Our wedding was magical thanks to Vedic Events!",
       event: "Luxury Wedding - Udaipur",
       date: "October 2024"
     },
@@ -63,9 +63,9 @@ const Testimonials = () => {
   return (
     <section className="testimonials-section" id="testimonials">
       <div className="section">
-        <h2 className="section-title">What Our Couples Say</h2>
+        <h2 className="section-title">What Our Clients Say</h2>
         <p className="section-subtitle">
-          Real stories from real couples whose dreams we helped bring to life
+          Real stories from satisfied clients whose celebrations we made unforgettable
         </p>
 
         <div className="testimonials-grid">

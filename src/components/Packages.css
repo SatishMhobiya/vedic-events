@@ -1,5 +1,5 @@
 .packages-section {
-  background: linear-gradient(180deg, var(--white) 0%, var(--pale-green) 100%);
+  background: linear-gradient(180deg, var(--white) 0%, var(--pale-saffron) 100%);
 }
 
 .packages-grid {
@@ -24,12 +24,12 @@
 .package-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  border-color: var(--soft-green);
+  border-color: var(--primary-saffron);
 }
 
 .package-card.featured {
-  border: 3px solid var(--primary-yellow);
-  background: linear-gradient(180deg, var(--white) 0%, var(--pale-yellow) 100%);
+  border: 3px solid var(--primary-gold);
+  background: linear-gradient(180deg, var(--white) 0%, var(--pale-gold) 100%);
   transform: scale(1.02);
 }
 
@@ -41,13 +41,13 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
   color: var(--white);
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 0.85rem;
   font-weight: 600;
-  box-shadow: 0 4px 15px rgba(45, 80, 22, 0.5);
+  box-shadow: 0 4px 15px rgba(157, 34, 53, 0.5);
   z-index: 10;
 }
 
@@ -75,7 +75,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, rgba(45, 80, 22, 0.7));
+  background: linear-gradient(to bottom, transparent, rgba(157, 34, 53, 0.75));
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -94,14 +94,14 @@
 
 .package-name {
   font-size: 1.8rem;
-  color: var(--primary-green);
+  color: var(--primary-maroon);
   margin-bottom: 10px;
   text-align: center;
 }
 
 .package-guests {
   text-align: center;
-  color: var(--soft-green);
+  color: var(--primary-saffron);
   font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 15px;
@@ -109,7 +109,7 @@
 
 .package-price {
   font-size: 2rem;
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
   font-weight: 700;
   text-align: center;
   margin-bottom: 10px;
@@ -136,12 +136,12 @@
 }
 
 .package-features::-webkit-scrollbar-track {
-  background: var(--pale-green);
+  background: var(--pale-gold);
   border-radius: 10px;
 }
 
 .package-features::-webkit-scrollbar-thumb {
-  background: var(--soft-green);
+  background: var(--primary-saffron);
   border-radius: 10px;
 }
 
@@ -156,7 +156,7 @@
 }
 
 .check-icon {
-  color: var(--soft-green);
+  color: var(--primary-saffron);
   font-size: 1rem;
   margin-top: 4px;
   flex-shrink: 0;
@@ -165,20 +165,20 @@
 .package-button {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
   color: var(--white);
   border: none;
   border-radius: 30px;
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(45, 80, 22, 0.3);
+  box-shadow: 0 4px 15px rgba(157, 34, 53, 0.4);
 }
 
 .package-button:hover {
-  background: linear-gradient(135deg, var(--light-green) 0%, var(--soft-green) 100%);
+  background: linear-gradient(135deg, var(--deep-maroon) 0%, var(--light-maroon) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(45, 80, 22, 0.4);
+  box-shadow: 0 6px 20px rgba(157, 34, 53, 0.5);
 }
 
 .services-section {
@@ -188,7 +188,7 @@
 .services-title {
   font-size: 2rem;
   text-align: center;
-  color: var(--primary-green);
+  color: var(--primary-maroon);
   margin-bottom: 50px;
 }
 
@@ -205,24 +205,24 @@
   text-align: center;
   box-shadow: 0 3px 15px var(--shadow);
   transition: all 0.3s ease;
-  border: 2px solid var(--pale-yellow);
+  border: 2px solid var(--pale-gold);
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-  border-color: var(--primary-yellow);
+  box-shadow: 0 6px 25px rgba(157, 34, 53, 0.2);
+  border-color: var(--primary-gold);
 }
 
 .service-icon {
   font-size: 2.5rem;
-  color: var(--light-green);
+  color: var(--primary-saffron);
   margin-bottom: 20px;
 }
 
 .service-card h4 {
   font-size: 1.3rem;
-  color: var(--primary-green);
+  color: var(--primary-maroon);
   margin-bottom: 15px;
 }
 
@@ -231,9 +231,10 @@
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .packages-grid {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .package-card.featured {
@@ -245,7 +246,60 @@
   }
 
   .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .package-name {
+    font-size: 1.6rem;
+  }
+
+  .package-price {
+    font-size: 1.8rem;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+  }
+
+  .services-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .package-image {
+    height: 220px;
+  }
+
+  .package-content {
+    padding: 25px 20px;
+  }
+
+  .package-name {
+    font-size: 1.5rem;
+  }
+
+  .package-price {
+    font-size: 1.6rem;
+  }
+
+  .package-features {
+    max-height: 350px;
+  }
+
+  .service-icon {
+    font-size: 2.2rem;
+  }
+
+  .service-card h4 {
+    font-size: 1.2rem;
   }
 }
 

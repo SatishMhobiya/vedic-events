@@ -1,0 +1,127 @@
+.client-logos-section {
+  background: linear-gradient(180deg, var(--white) 0%, var(--pale-purple) 100%);
+  padding: 80px 0;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.client-badge {
+  background: var(--white);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 15px var(--shadow);
+  transition: all 0.3s ease;
+  border: 2px solid var(--pale-gold);
+}
+
+.client-badge:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-gold);
+  box-shadow: 0 6px 25px rgba(157, 34, 53, 0.15);
+}
+
+.client-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  filter: grayscale(0.3);
+}
+
+.client-badge p {
+  color: var(--dark-text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.client-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 5px 25px var(--shadow);
+}
+
+.client-stat-item {
+  text-align: center;
+  padding: 20px;
+  border-right: 2px solid var(--pale-gold);
+}
+
+.client-stat-item:last-child {
+  border-right: none;
+}
+
+.client-stat-item h3 {
+  font-size: 2.5rem;
+  color: var(--primary-maroon);
+  margin-bottom: 10px;
+}
+
+.client-stat-item p {
+  color: var(--light-text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 968px) {
+  .clients-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .client-stats {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .client-stat-item {
+    border-right: none;
+    border-bottom: 2px solid var(--pale-gold);
+    padding-bottom: 20px;
+  }
+
+  .client-stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client-badge {
+    padding: 25px 15px;
+  }
+
+  .client-icon {
+    font-size: 2.2rem;
+  }
+
+  .client-stat-item h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-stats {
+    padding: 25px 20px;
+  }
+
+  .client-stat-item h3 {
+    font-size: 2rem;
+  }
+}
+

@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
   color: var(--white);
   padding: 60px 20px 20px;
 }
@@ -16,19 +16,15 @@
 .footer-section h3,
 .footer-section h4 {
   margin-bottom: 20px;
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
 }
 
-.footer-logo {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.footer-tagline {
-  font-size: 0.9rem;
-  font-style: italic;
-  margin-bottom: 15px;
-  color: var(--soft-yellow);
+.footer-logo-image {
+  height: 80px;
+  width: auto;
+  margin-bottom: 20px;
+  filter: brightness(1.1) saturate(1.2);
+  opacity: 0.95;
 }
 
 .footer-description {
@@ -55,8 +51,8 @@
 }
 
 .social-icon:hover {
-  background-color: var(--primary-yellow);
-  color: var(--primary-green);
+  background-color: var(--primary-gold);
+  color: var(--primary-maroon);
   transform: translateY(-3px);
 }
 
@@ -75,7 +71,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
   padding-left: 5px;
 }
 
@@ -92,7 +88,7 @@
 }
 
 .contact-icon {
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
   font-size: 1.2rem;
   flex-shrink: 0;
 }
@@ -100,8 +96,8 @@
 .footer-cta {
   width: 100%;
   padding: 12px 20px;
-  background-color: var(--primary-yellow);
-  color: var(--primary-green);
+  background-color: var(--primary-gold);
+  color: var(--primary-maroon);
   border: none;
   border-radius: 25px;
   font-weight: 600;
@@ -110,9 +106,9 @@
 }
 
 .footer-cta:hover {
-  background-color: var(--soft-yellow);
+  background-color: var(--soft-gold);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
 }
 
 .footer-bottom {
@@ -143,7 +139,7 @@
 }
 
 .footer-bottom-links a:hover {
-  color: var(--primary-yellow);
+  color: var(--primary-gold);
 }
 
 .footer-bottom-links span {
@@ -151,8 +147,18 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 50px 20px 20px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 1.3rem;
   }
 
   .footer-bottom {
@@ -163,6 +169,24 @@
   .footer-bottom-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-logo-image {
+    height: 70px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .contact-item {
+    font-size: 0.95rem;
   }
 }
 

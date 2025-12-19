@@ -1,0 +1,135 @@
+.event-idea-section {
+  background: linear-gradient(135deg, var(--pale-saffron) 0%, var(--pale-gold) 100%);
+  padding: 80px 0;
+}
+
+.event-idea-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.event-idea-title {
+  font-size: 2.5rem;
+  color: var(--primary-maroon);
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.event-idea-description {
+  font-size: 1.1rem;
+  color: var(--light-text);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.contact-method-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px var(--shadow);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.contact-method-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-gold);
+  box-shadow: 0 10px 40px rgba(157, 34, 53, 0.2);
+}
+
+.contact-method-icon {
+  font-size: 3rem;
+  color: var(--primary-saffron);
+  margin-bottom: 20px;
+}
+
+.contact-method-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-maroon);
+  margin-bottom: 15px;
+}
+
+.contact-method-card p {
+  color: var(--light-text);
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.contact-method-btn {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(157, 34, 53, 0.3);
+}
+
+.contact-method-btn:hover {
+  background: linear-gradient(135deg, var(--deep-maroon) 0%, var(--light-maroon) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(157, 34, 53, 0.4);
+}
+
+@media (max-width: 968px) {
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .event-idea-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-idea-title {
+    font-size: 2rem;
+  }
+
+  .event-idea-description {
+    font-size: 1rem;
+  }
+
+  .contact-method-card {
+    padding: 35px 25px;
+  }
+
+  .contact-method-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-idea-title {
+    font-size: 1.7rem;
+  }
+
+  .event-idea-description {
+    font-size: 0.95rem;
+  }
+
+  .contact-method-card {
+    padding: 30px 20px;
+  }
+
+  .contact-method-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-method-btn {
+    width: 100%;
+  }
+}
+

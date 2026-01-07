@@ -219,10 +219,10 @@ const Gallery = () => {
         )}
 
         {/* CTA Section */}
-        <div className="gallery-cta">
+        {/* <div className="gallery-cta">
           <p>Want to see more of our work?</p>
           <button className="gallery-button">View Full Portfolio</button>
-        </div>
+        </div> */}
       </div>
 
       {/* Lightbox Modal */}

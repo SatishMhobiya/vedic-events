@@ -146,6 +146,11 @@ const Packages = () => {
           ))}
         </div>
 
+        {/* Mobile Scroll Hint */}
+        <div className="scroll-hint-packages">
+          <span>← Swipe to explore all packages →</span>
+        </div>
+
         <div className="services-section">
           <h3 className="services-title">What We Offer</h3>
           <div className="services-grid">
@@ -156,6 +161,11 @@ const Packages = () => {
                 <p>{service.description}</p>
               </div>
             ))}
+          </div>
+          
+          {/* Services Scroll Hint */}
+          <div className="scroll-hint-services">
+            <span>← Swipe to see all services →</span>
           </div>
         </div>
       </div>

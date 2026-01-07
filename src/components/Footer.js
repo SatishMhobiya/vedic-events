@@ -1,25 +1,24 @@
 import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import './Footer.css';
-import logo from '../assets/images/vedic_events_logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer" id="contact">
       <div className="footer-content">
-        <div className="footer-section">
-          <img src={logo} alt="Vedic Events Logo" className="footer-logo-image" />
+        {/* <div className="footer-section"> */}
+          {/* <img src={logo} alt="Vedic Events Logo" className="footer-logo-image" />
           <p className="footer-description">
             Your trusted partner in creating unforgettable event experiences. 
             We turn your vision into reality with elegance and perfection.
-          </p>
-          <div className="social-links">
+          </p> */}
+          {/* <div className="social-links">
             <a href="https://facebook.com" className="social-icon" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             <a href="https://instagram.com" className="social-icon" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             <a href="https://twitter.com" className="social-icon" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             <a href="https://wa.me/919876543210" className="social-icon" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         <div className="footer-section">
           <h4>Quick Links</h4>
@@ -63,11 +62,18 @@ const Footer = () => {
               <span>123 Wedding Street, Mumbai, India</span>
             </div>
           </div>
-          <button className="footer-cta">Schedule Consultation</button>
+          {/* <button className="footer-cta">Schedule Consultation</button> */}
         </div>
+        
       </div>
 
       <div className="footer-bottom">
+      <div className="social-links">
+            <a href="https://facebook.com" className="social-icon" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://instagram.com" className="social-icon" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://twitter.com" className="social-icon" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://wa.me/919876543210" className="social-icon" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+          </div>
         <p>&copy; 2025 Vedic Events. All rights reserved.</p>
         <div className="footer-bottom-links">
           <a href="/privacy-policy">Privacy Policy</a>

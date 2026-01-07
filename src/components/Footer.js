@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="contact-info">
             <div className="contact-item">
               <FaPhone className="contact-icon" />
-              <span>+91 98765 43210</span>
+              <span>+{process.env.REACT_APP_MOBILE_NUMBER}</span>
             </div>
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />

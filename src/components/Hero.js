@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaHeart, FaStar, FaAward } from 'react-icons/fa';
+// import { FaHeart, FaStar, FaAward } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {

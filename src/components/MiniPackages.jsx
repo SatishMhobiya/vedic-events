@@ -8,7 +8,7 @@ const MiniPackages = () => {
     const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
     // WhatsApp number (replace with your actual number)
-    const whatsappNumber = '918602204279'; // Replace with actual number
+    const whatsappNumber = process.env.REACT_APP_MOBILE_NUMBER; // Replace with actual number
 
     const miniPackages = [
         {

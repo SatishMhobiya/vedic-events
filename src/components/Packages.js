@@ -4,7 +4,7 @@ import './Packages.css';
 
 const Packages = () => {
   const handleWhatsAppClick = (packageName, packagePrice) => {
-    const phoneNumber = '918602204279'; // Replace with actual WhatsApp number
+    const phoneNumber = process.env.REACT_APP_MOBILE_NUMBER; // Replace with actual WhatsApp number
     const message = `Hi Vedic Events! I'm interested in the ${packageName} (${packagePrice}). Please provide me with more details.`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

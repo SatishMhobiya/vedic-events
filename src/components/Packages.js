@@ -1,8 +1,15 @@
 import React from 'react';
-import { FaLeaf, FaPalette, FaMusic, FaUtensils, FaDoorOpen, FaCheck } from 'react-icons/fa';
+import { FaLeaf, FaPalette, FaMusic, FaUtensils, FaDoorOpen, FaCheck, FaWhatsapp } from 'react-icons/fa';
 import './Packages.css';
 
 const Packages = () => {
+  const handleWhatsAppClick = (packageName, packagePrice) => {
+    const phoneNumber = '918602204279'; // Replace with actual WhatsApp number
+    const message = `Hi Vedic Events! I'm interested in the ${packageName} (${packagePrice}). Please provide me with more details.`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const packages = [
     {
       id: 1,
@@ -140,7 +147,13 @@ const Packages = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="package-button">Choose Package</button>
+                <button 
+                  className="package-button whatsapp-button"
+                  onClick={() => handleWhatsAppClick(pkg.name, pkg.price)}
+                >
+                  <FaWhatsapp className="whatsapp-icon" />
+                  Contact on WhatsApp
+                </button>
               </div>
             </div>
           ))}

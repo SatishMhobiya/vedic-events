@@ -8,7 +8,7 @@ const MiniPackages = () => {
     const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
     // WhatsApp number (replace with your actual number)
-    const whatsappNumber = '919876543210'; // Replace with actual number
+    const whatsappNumber = '918602204279'; // Replace with actual number
 
     const miniPackages = [
         {
@@ -282,7 +282,6 @@ const MiniPackages = () => {
                                     <button
                                         className="whatsapp-button"
                                         onClick={(e) => handleWhatsApp(pkg, e)}
-                                        style={{ backgroundColor: pkg.color }}
                                     >
                                         <FaWhatsapp /> WhatsApp Inquiry
                                     </button>
@@ -382,7 +381,6 @@ const MiniPackages = () => {
                                     handleWhatsApp(selectedPackage, e);
                                     closeLightbox();
                                 }}
-                                style={{ backgroundColor: selectedPackage.color }}
                             >
                                 <FaWhatsapp /> Book This Package via WhatsApp
                             </button>

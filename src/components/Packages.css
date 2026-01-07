@@ -215,6 +215,25 @@
   box-shadow: 0 6px 20px rgba(157, 34, 53, 0.5);
 }
 
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button:hover {
+  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-icon {
+  font-size: 1.2rem;
+}
+
 /* Scroll Hints */
 .scroll-hint-packages,
 .scroll-hint-services {
@@ -406,6 +425,10 @@
   .package-button {
     padding: 15px;
     font-size: 1rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 1.3rem;
   }
 
   .featured-badge {

@@ -21,7 +21,7 @@ const Gallery = () => {
       title: "Wedding Ceremony Highlights",
       category: "Wedding",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801696/decoVid1_x4w592.mp4",
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801696/decoVid1_x4w592.jpg",
       media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801696/decoVid1_x4w592.mp4"
     },
     {
@@ -37,7 +37,7 @@ const Gallery = () => {
       title: "Product Launch Event",
       category: "Corporate",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801830/decoVid5_yknztl.mp4",
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801830/decoVid5_yknztl.jpg",
       media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801830/decoVid5_yknztl.mp4"
     },
     {
@@ -69,7 +69,7 @@ const Gallery = () => {
       title: "Cultural Festival Event",
       category: "Cultural",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801721/decoVid4_g6hqdw.mp4",
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801721/decoVid4_g6hqdw.jpg",
       media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801721/decoVid4_g6hqdw.mp4"
     },
     {
@@ -77,7 +77,7 @@ const Gallery = () => {
       title: "Sangeet Night Performance",
       category: "Wedding",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801741/decoVid3_flbrht.mp4",
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801741/decoVid3_flbrht.jpg",
       media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801741/decoVid3_flbrht.mp4"
     },
     {
@@ -109,7 +109,7 @@ const Gallery = () => {
       title: "Sangeet Night Performance",
       category: "Wedding",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801718/decoVid2_j7jzkp.mp4",
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801718/decoVid2_j7jzkp.jpg",
       media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801718/decoVid2_j7jzkp.mp4"
     },
   ];

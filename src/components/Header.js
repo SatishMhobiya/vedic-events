@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Header.css';
-import logo from '../assets/images/vedic_events_logo.png';
+import logo from '../assets/images/vedicEventsLogo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

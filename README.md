@@ -1,87 +1,87 @@
-# Blissful Events - Professional Wedding Planner Website
+# Vedic Events - Professional Event Planning Website
 
-A stunning, professional wedding planner website built with React.js featuring a beautiful green and yellow theme palette with real wedding images and comprehensive features.
+A stunning, mobile-first event planning website built with React.js featuring an elegant brown, gold, and cream theme with comprehensive event management services.
 
 ## 🌟 Key Features
 
-### **Complete Wedding Planning Platform**
-- 🎨 **Beautiful Modern UI** - Professional design inspired by top event management websites
-- 📸 **Real High-Quality Images** - Powered by Unsplash API for authentic wedding photography
-- 💚💛 **Green & Yellow Theme** - Elegant color palette perfect for wedding celebrations
-- 📱 **Fully Responsive** - Perfect experience on mobile, tablet, and desktop
+### **Complete Event Planning Platform**
+- 🎨 **Beautiful Modern UI** - Professional design with Vedic-inspired color palette
+- 📸 **Real High-Quality Images** - Professional event photography
+- 🤎✨ **Brown & Gold Theme** - Elegant colors perfect for celebrations
+- 📱 **Mobile-First Design** - Optimized for mobile users with horizontal scrolling
 - ✨ **Smooth Animations** - Engaging hover effects and transitions throughout
+- 💬 **WhatsApp Integration** - Direct inquiry functionality
 
 ### **Comprehensive Sections**
 
 #### 1. **Hero Section**
-- Full-screen background with stunning wedding venue image
+- Full-screen background with stunning venue image
 - Compelling call-to-action buttons
-- Key statistics display (500+ weddings, 4.9/5 rating)
+- Key statistics display (500+ events, 4.9/5 rating)
 - Smooth parallax scrolling effect
 
-#### 2. **About Section**
-- Company story and values
-- Professional team showcase
-- Key features and benefits
-- Live statistics counter
-- High-quality imagery
-
-#### 3. **Wedding Packages** (3 Tiers)
+#### 2. **Event Packages** (3 Premium Tiers)
 - **Silver Package** - ₹2,50,000 (Up to 100 guests)
 - **Gold Package** - ₹5,00,000 (Up to 200 guests) ⭐ Most Popular
 - **Platinum Package** - ₹10,00,000+ (500+ guests)
 
-Each package includes:
-- Professional package images
-- Detailed feature lists
-- Guest capacity information
-- Visual icons and highlights
+**Mobile Features:**
+- Horizontal scrolling for easy browsing
+- Touch-optimized card design
+- Compact spacing for mobile users
+- No excessive vertical scrolling
 
-#### 4. **Gallery Section**
-- 9 high-quality wedding images
-- Categories: Venue, Traditional, Entertainment, Food, Decoration
-- Image overlay effects
-- Professional wedding photography showcase
+#### 3. **Mini Packages** (Starting from ₹2,999)
+- **Birthday Celebration** - ₹2,999
+- **Anniversary** - ₹3,499
+- **Haldi Ceremony** - ₹4,999
+- **Mehndi Ceremony** - ₹4,499
 
-#### 5. **Services Overview**
-- 🏡 Garden Venues - Beautiful outdoor settings
-- 🎨 Haldi & Mehndi - Traditional ceremony setups
-- 🎵 Mahila Sangeet - Grand stage with entertainment
-- 🍽️ Catering Services - Multi-cuisine gourmet menu
-- 🚪 Grand Entry - Spectacular entrance decorations
+**Special Features:**
+- WhatsApp inquiry button on each package
+- Click to view package-specific gallery with images/videos
+- Full-screen lightbox with media navigation
+- Horizontal scrolling layout for mobile
+- Thumbnail navigation for media browsing
 
-#### 6. **Why Choose Us Section**
-- 8 compelling reasons with icons
+#### 4. **Pinterest-Style Gallery**
+- Masonry layout with varying heights
+- Dynamic 2-4 column grid (responsive)
+- Categories: Wedding, Corporate, Social, Cultural
+- Filter by Images/Videos
+- Lightbox modal for full-size viewing
+- Smooth hover effects
+
+#### 5. **Why Choose Us Section**
+- 4 compelling reasons with icons
 - Professional highlights
-- Industry awards and recognition
+- Industry recognition
 - Call-to-action banner
-- Download brochure option
 
-#### 7. **Testimonials Section**
-- 6 authentic client reviews
-- 5-star ratings
-- Client photos
-- Event details and dates
-- Professional testimonial cards
+#### 6. **Event Ideas Section**
+- Service categories
+- Quick inquiry options
+- Visual representations
 
-#### 8. **Professional Footer**
-- Complete contact information
-- Quick navigation links
-- Social media integration
-- Newsletter signup
-- Business hours
+#### 7. **Professional Footer**
+- **Mobile-Optimized:** 2-column layout on mobile
+- Quick Links | Our Services (side by side)
+- Contact Information (full width)
+- Social media integration (Facebook, Instagram, Twitter, WhatsApp)
+- Newsletter CTA button
+- Compact spacing for mobile users
 
 ## 🎯 Services Showcased
 
-### Wedding Planning Services:
-1. **Garden Venues** - Lush outdoor settings with scenic beauty
-2. **Haldi & Mehndi Setup** - Traditional vibrant decorations
-3. **Mahila Sangeet** - Grand stage with professional lighting & sound
-4. **Catering Services** - International & Indian cuisine options
-5. **Grand Entry** - Spectacular entrance decorations
-6. **Photography & Videography** - Professional coverage
-7. **Event Coordination** - Full-day management team
-8. **Destination Weddings** - Complete planning and coordination
+### Event Planning Services:
+1. **Corporate Events** - Professional business gatherings
+2. **Wedding Planning** - Complete wedding coordination
+3. **Cultural Celebrations** - Traditional ceremonies
+4. **Birthday Parties** - Memorable celebrations
+5. **Anniversary Events** - Romantic celebrations
+6. **Haldi & Mehndi** - Vibrant traditional ceremonies
+7. **Venue Management** - Complete venue coordination
+8. **Catering Services** - Multi-cuisine options
 
 ## 🛠️ Technology Stack
 
@@ -89,7 +89,7 @@ Each package includes:
 - **React Icons 4.12** - Comprehensive icon library
 - **CSS3** - Custom styling with gradients and animations
 - **Google Fonts** - Playfair Display (headings) & Poppins (body)
-- **Unsplash API** - High-quality wedding photography
+- **Mobile-First Design** - Optimized for mobile devices
 
 ## 📦 Installation & Setup
 
@@ -101,7 +101,7 @@ Each package includes:
 
 1. **Navigate to project directory:**
 ```bash
-cd /Users/manal/Desktop/eventPlanner/project
+cd vedic-events
 ```
 
 2. **Install dependencies:**
@@ -122,71 +122,89 @@ http://localhost:3000
 ## 📁 Project Structure
 
 ```
-project/
+vedic-events/
 ├── public/
-│   └── index.html
+│   ├── index.html
+│   └── logo files
 ├── src/
 │   ├── components/
-│   │   ├── Header.js          # Navigation & Logo
-│   │   ├── Hero.js            # Landing section
-│   │   ├── About.js           # Company info & stats
-│   │   ├── Packages.js        # Wedding packages
-│   │   ├── Gallery.js         # Photo gallery
-│   │   ├── WhyChooseUs.js     # Benefits section
-│   │   ├── Testimonials.js    # Client reviews
-│   │   └── Footer.js          # Contact & links
-│   ├── App.js                 # Main component
-│   ├── App.css                # Global styles
-│   ├── index.js               # Entry point
-│   └── index.css              # CSS variables
+│   │   ├── Header.js/.css       # Navigation & Logo
+│   │   ├── Hero.js/.css         # Landing section
+│   │   ├── Packages.js/.css     # Event packages (mobile-optimized)
+│   │   ├── MiniPackages.jsx/.css # Budget packages with WhatsApp
+│   │   ├── Gallery.js/.css      # Pinterest-style gallery
+│   │   ├── WhyChooseUs.js/.css  # Benefits section
+│   │   ├── EventIdea.js/.css    # Service ideas
+│   │   └── Footer.js/.css       # Contact (mobile-optimized)
+│   ├── assets/
+│   │   └── images/              # Logo and images
+│   ├── App.js                   # Main component
+│   ├── App.css                  # Global styles
+│   ├── index.js                 # Entry point
+│   └── index.css                # CSS variables (Vedic theme)
 ├── package.json
 ├── README.md
-└── QUICKSTART.md
+└── Documentation files
 ```
 
-## 🎨 Color Palette
+## 🎨 Color Palette (Vedic Theme)
 
 ```css
---primary-green: #2D5016    /* Deep forest green */
---light-green: #4A7C2C      /* Fresh meadow green */
---soft-green: #6B9E4D       /* Sage green */
---pale-green: #E8F5E1       /* Mint cream */
---primary-yellow: #F4D03F   /* Golden yellow */
---soft-yellow: #F9E79F      /* Butter yellow */
---pale-yellow: #FEF9E7      /* Cream */
+/* Rich Browns - Tradition & Warmth */
+--primary-brown: #3E2723
+--deep-brown: #2C1810
+--medium-brown: #5D4037
+--light-brown: #8D6E63
+--pale-brown: #EFEBE9
+
+/* Elegant Gold - Luxury & Celebration */
+--primary-gold: #C9A961
+--antique-gold: #B8941E
+--bronze-gold: #CD9A4D
+--soft-gold: #D4B76A
+--light-gold: #E8D4A0
+--pale-gold: #FAF5E8
+
+/* Warm Backgrounds */
+--cream: #F5F1E8
+--light-cream: #FAF8F3
+--warm-cream: #F9F6F0
 ```
 
-## 📊 Wedding Packages Breakdown
+## 📊 Package Breakdown
 
 ### Silver Package - ₹2,50,000
 Perfect for intimate celebrations
 - 100 guests capacity
-- Garden venue setup
-- Basic traditional ceremonies
-- 3-course vegetarian catering
-- 3 hours coordination
+- Venue setup & decoration
+- Basic stage with lighting
+- 3-course catering
+- Event coordination (3 hours)
 
 ### Gold Package - ₹5,00,000 ⭐ MOST POPULAR
-Complete wedding experience
+Complete event experience
 - 200 guests capacity
-- Premium venue with landscaping
-- Full traditional ceremony setups
-- 5-course multi-cuisine catering
-- Professional photography (8 hours)
-- Live music and entertainment
-- Full-day coordination
+- Premium venue with custom theming
+- 5-course gourmet catering
+- Professional photography & videography (8 hours)
+- Live entertainment & music
+- Full-day event management
 
 ### Platinum Package - ₹10,00,000+
-Ultimate luxury wedding
+Ultimate luxury event
 - 500+ guests capacity
 - Luxury resort/destination venue
-- Designer theme-based setups
-- 7-course gourmet catering
-- Cinematic photo & video coverage
-- Celebrity performances
-- Complete event management team
-- Destination wedding coordination
-- Pre-wedding photoshoot included
+- Bespoke designer theme & decor
+- 7-course international catering
+- Celebrity entertainment
+- Complete event management team (15+ members)
+- Destination event planning
+
+### Mini Packages (Budget-Friendly)
+- Birthday Celebration - ₹2,999
+- Anniversary - ₹3,499
+- Haldi Ceremony - ₹4,999
+- Mehndi Ceremony - ₹4,499
 
 ## 🚀 Build for Production
 
@@ -196,37 +214,53 @@ npm run build
 
 This creates an optimized production build in the `build/` folder ready for deployment.
 
-## 📱 Responsive Design
+## 📱 Mobile-First Responsive Design
 
-- **Mobile**: < 576px - Single column, stacked layout
-- **Tablet**: 576px - 968px - 2 column grid
+- **Mobile**: < 480px - Single/double column, horizontal scrolling
+- **Small Mobile**: 480px - 768px - Optimized 2-column layouts
+- **Tablet**: 768px - 968px - 2-3 column grid
 - **Desktop**: > 968px - Full multi-column layout
-- **Large Desktop**: > 1200px - Maximum width container
+- **Large Desktop**: > 1440px - Maximum width container
+
+### Mobile Optimizations:
+- Horizontal scrolling for packages (no long vertical scroll)
+- 2-column footer layout (more compact)
+- Touch-optimized buttons and cards
+- Reduced spacing for mobile screens
+- Larger tap targets for better UX
 
 ## ✨ Key Design Features
 
-1. **Professional Typography** - Playfair Display for elegance, Poppins for readability
-2. **Smooth Animations** - CSS transitions and hover effects
-3. **Image Optimization** - Lazy loading for better performance
-4. **Gradient Backgrounds** - Modern green-yellow gradient themes
-5. **Card-Based Layout** - Clean, organized content sections
-6. **Icon Integration** - React Icons for visual enhancement
-7. **Box Shadows** - Depth and dimension throughout
-8. **Sticky Navigation** - Always accessible menu
+1. **Mobile-First Approach** - Designed for mobile users first
+2. **Horizontal Scrolling** - Easy browsing on mobile devices
+3. **Pinterest Gallery** - Masonry layout with varying heights
+4. **WhatsApp Integration** - Direct inquiry from mini packages
+5. **Professional Typography** - Playfair Display for elegance, Poppins for readability
+6. **Smooth Animations** - CSS transitions and hover effects
+7. **Image Optimization** - Lazy loading for better performance
+8. **Gradient Backgrounds** - Warm brown-gold gradient themes
+9. **Card-Based Layout** - Clean, organized content sections
+10. **Icon Integration** - React Icons for visual enhancement
 
 ## 🔧 Customization Guide
+
+### Update WhatsApp Number
+Edit `src/components/MiniPackages.jsx` line 12:
+```javascript
+const whatsappNumber = '919876543210'; // Update with your number
+```
 
 ### Change Colors
 Edit `src/index.css`:
 ```css
 :root {
-  --primary-green: #YourColor;
-  --primary-yellow: #YourColor;
+  --primary-brown: #YourColor;
+  --primary-gold: #YourColor;
 }
 ```
 
 ### Update Package Details
-Edit `src/components/Packages.js`:
+Edit `src/components/Packages.js` or `src/components/MiniPackages.jsx`:
 - Modify the `packages` array
 - Change prices, features, or images
 
@@ -236,47 +270,27 @@ Update in:
 - `src/components/Footer.js`
 - `public/index.html`
 
-### Add More Gallery Images
-Edit `src/components/Gallery.js`:
-- Add items to `galleryItems` array
-- Use Unsplash URLs or your own images
+## 🎯 Special Features
 
-### Modify Testimonials
-Edit `src/components/Testimonials.js`:
-- Update the `testimonials` array with real client reviews
+### WhatsApp Integration
+- One-click inquiry from mini packages
+- Pre-filled message with package details
+- Opens WhatsApp in new tab
+- Mobile-friendly functionality
 
-## 🌐 Image Sources
+### Gallery Features
+- Pinterest-style masonry layout
+- Filter by category or media type
+- Full-screen lightbox modal
+- Image/video navigation
+- Thumbnail preview
 
-All images are sourced from [Unsplash](https://unsplash.com), a free high-quality stock photography platform:
-- Wedding venues
-- Traditional ceremonies (Haldi, Mehndi)
-- Sangeet performances
-- Catering displays
-- Floral arrangements
-- Couple photography
-
-## 🎯 Future Enhancements (Backend Integration)
-
-### Phase 2 - MERN Stack Backend:
-- [ ] Node.js + Express.js API server
-- [ ] MongoDB database integration
-- [ ] User authentication system
-- [ ] Online booking functionality
-- [ ] Payment gateway (Razorpay/Stripe)
-- [ ] Admin dashboard
-- [ ] Real-time availability checker
-- [ ] Email notifications
-- [ ] Customer management system
-- [ ] Invoice generation
-- [ ] Blog/CMS integration
-
-### Phase 3 - Advanced Features:
-- [ ] Virtual venue tours (360°)
-- [ ] AI-powered package recommendations
-- [ ] Live chat support
-- [ ] Multi-language support
-- [ ] Progressive Web App (PWA)
-- [ ] Mobile app development
+### Mobile Features
+- Horizontal scrolling packages
+- Compact footer layout
+- Touch-optimized interactions
+- Fast loading times
+- Reduced vertical scrolling
 
 ## 📈 Performance Optimization
 
@@ -285,14 +299,18 @@ All images are sourced from [Unsplash](https://unsplash.com), a free high-qualit
 - Component-based architecture
 - Minimal external dependencies
 - Fast page load times
+- Mobile-first approach
 
-## 🤝 Contributing
+## 🤝 Support
 
-This is a client project. For modifications or improvements, please contact the development team.
+For modifications or improvements, check the documentation files:
+- `FEATURES.md` - Complete features list
+- `PROJECT_SUMMARY.md` - Project overview
+- `DEPLOYMENT.md` - Deployment guide
 
 ## 📄 License
 
-Copyright © 2025 Blissful Events. All rights reserved.
+Copyright © 2025 Vedic Events. All rights reserved.
 
 ---
 
@@ -300,14 +318,14 @@ Copyright © 2025 Blissful Events. All rights reserved.
 
 - **Total Components**: 8 major sections
 - **Total CSS Files**: 8 styled components
-- **Package Options**: 3 comprehensive tiers
-- **Gallery Images**: 9 professional photos
-- **Testimonials**: 6 client reviews
-- **Service Categories**: 5 main services
-- **Color Scheme**: Green & Yellow theme
+- **Package Options**: 3 premium tiers + 4 mini packages
+- **Gallery**: Pinterest-style masonry layout
+- **WhatsApp**: Direct inquiry integration
+- **Mobile-First**: Optimized for mobile users
+- **Color Scheme**: Vedic brown & gold theme
 
 ---
 
-**Built with ❤️ for creating unforgettable wedding memories**
+**Built with ❤️ for creating unforgettable event experiences**
 
-*Need help? Contact: info@blissfulevents.com | +91 98765 43210*
+*Need help? Contact: info@vedicevents.com | +91 98765 43210*

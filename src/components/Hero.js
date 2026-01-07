@@ -21,6 +21,21 @@ const Hero = () => {
 
   return (
     <section className="hero" id="home">
+      {/* Background Video */}
+      <video 
+        className="hero-video" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+      >
+        <source 
+          src="https://res.cloudinary.com/ddktwy6ee/video/upload/v1767791046/wedding_pin_p1fijj.mp4" 
+          type="video/mp4" 
+        />
+        Your browser does not support the video tag.
+      </video>
+      
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <h1 className="hero-title">Elevate Your Events to Excellence</h1>
@@ -30,12 +45,12 @@ const Hero = () => {
         <p className="hero-description">
           From corporate conferences to grand weddings, cultural celebrations to intimate gatherings – we bring your vision to life with unmatched elegance and precision
         </p>
-        <div className="hero-buttons">
+        {/* <div className="hero-buttons">
           <button className="hero-btn primary">Explore Packages</button>
           <button className="hero-btn secondary">Get Free Quote</button>
-        </div>
+        </div> */}
         
-        <div className="hero-stats">
+        {/* <div className="hero-stats">
           <div className="stat">
             <FaHeart className="stat-icon" />
             <h3>1000+</h3>
@@ -51,7 +66,7 @@ const Hero = () => {
             <h3>50+</h3>
             <p>Industry Awards</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

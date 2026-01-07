@@ -1,15 +1,43 @@
 .packages-section {
   background: linear-gradient(180deg, var(--white) 0%, var(--pale-saffron) 100%);
+  padding: 60px 20px;
+  overflow: hidden;
 }
 
+/* Mobile-First: Horizontal Scroll Container */
 .packages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  margin-bottom: 80px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  padding: 20px 10px 40px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-saffron) var(--pale-gold);
+  margin-bottom: 40px;
+}
+
+.packages-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.packages-grid::-webkit-scrollbar-track {
+  background: var(--pale-gold);
+  border-radius: 10px;
+}
+
+.packages-grid::-webkit-scrollbar-thumb {
+  background: var(--primary-saffron);
+  border-radius: 10px;
+}
+
+.packages-grid::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-maroon);
 }
 
 .package-card {
+  flex: 0 0 320px; /* Fixed width for horizontal scrolling */
   background: var(--white);
   border-radius: 20px;
   overflow: hidden;
@@ -19,6 +47,7 @@
   border: 2px solid transparent;
   display: flex;
   flex-direction: column;
+  max-height: 700px; /* Limit height on mobile */
 }
 
 .package-card:hover {
@@ -30,11 +59,6 @@
 .package-card.featured {
   border: 3px solid var(--primary-gold);
   background: linear-gradient(180deg, var(--white) 0%, var(--pale-gold) 100%);
-  transform: scale(1.02);
-}
-
-.package-card.featured:hover {
-  transform: scale(1.02) translateY(-10px);
 }
 
 .featured-badge {
@@ -43,9 +67,9 @@
   right: 15px;
   background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 25px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   box-shadow: 0 4px 15px rgba(157, 34, 53, 0.5);
   z-index: 10;
@@ -54,8 +78,9 @@
 .package-image {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 180px; /* Reduced for mobile */
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .package-image img {
@@ -79,60 +104,67 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .package-icon {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: var(--white);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .package-content {
-  padding: 30px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .package-name {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--primary-maroon);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   text-align: center;
+  font-weight: 700;
 }
 
 .package-guests {
   text-align: center;
   color: var(--primary-saffron);
   font-weight: 600;
-  font-size: 0.95rem;
-  margin-bottom: 15px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
 .package-price {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--primary-gold);
   font-weight: 700;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .package-description {
   text-align: center;
   color: var(--light-text);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-style: italic;
+  font-size: 0.9rem;
 }
 
 .package-features {
   list-style: none;
-  margin-bottom: 30px;
-  max-height: 400px;
+  margin-bottom: 15px;
+  flex: 1;
   overflow-y: auto;
-  padding-right: 10px;
+  padding-right: 5px;
+  scrollbar-width: thin;
 }
 
 .package-features::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 .package-features::-webkit-scrollbar-track {
@@ -148,31 +180,33 @@
 .package-features li {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: 10px;
+  margin-bottom: 10px;
   color: var(--dark-text);
-  line-height: 1.6;
-  font-size: 0.95rem;
+  line-height: 1.5;
+  font-size: 0.85rem;
 }
 
 .check-icon {
   color: var(--primary-saffron);
-  font-size: 1rem;
-  margin-top: 4px;
+  font-size: 0.9rem;
+  margin-top: 3px;
   flex-shrink: 0;
 }
 
 .package-button {
   width: 100%;
-  padding: 15px;
+  padding: 12px;
   background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--deep-maroon) 100%);
   color: var(--white);
   border: none;
   border-radius: 30px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(157, 34, 53, 0.4);
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .package-button:hover {
@@ -181,26 +215,79 @@
   box-shadow: 0 6px 20px rgba(157, 34, 53, 0.5);
 }
 
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button:hover {
+  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-icon {
+  font-size: 1.2rem;
+}
+
+/* Scroll Hints */
+.scroll-hint-packages,
+.scroll-hint-services {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--light-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: block;
+}
+
+/* Services Section - Also Horizontal on Mobile */
 .services-section {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .services-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   color: var(--primary-maroon);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  padding: 15px 10px 30px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-saffron) var(--pale-gold);
+}
+
+.services-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.services-grid::-webkit-scrollbar-track {
+  background: var(--pale-gold);
+  border-radius: 10px;
+}
+
+.services-grid::-webkit-scrollbar-thumb {
+  background: var(--primary-saffron);
+  border-radius: 10px;
 }
 
 .service-card {
+  flex: 0 0 260px;
   background: var(--white);
-  padding: 30px;
+  padding: 25px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 3px 15px var(--shadow);
@@ -217,89 +304,297 @@
 .service-icon {
   font-size: 2.5rem;
   color: var(--primary-saffron);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .service-card h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--primary-maroon);
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .service-card p {
   color: var(--light-text);
   line-height: 1.6;
+  font-size: 0.9rem;
 }
 
-@media (max-width: 968px) {
-  .packages-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
+/* Tablet Breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .packages-section {
+    padding: 70px 30px;
   }
 
-  .package-card.featured {
-    transform: scale(1);
+  .package-card {
+    flex: 0 0 360px;
+    max-height: 750px;
   }
 
-  .package-card.featured:hover {
-    transform: translateY(-10px);
-  }
-
-  .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  .package-name {
-    font-size: 1.6rem;
-  }
-
-  .package-price {
-    font-size: 1.8rem;
-  }
-
-  .services-title {
-    font-size: 1.8rem;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .service-card {
-    padding: 25px;
-  }
-}
-
-@media (max-width: 480px) {
   .package-image {
-    height: 220px;
+    height: 200px;
   }
 
   .package-content {
-    padding: 25px 20px;
+    padding: 25px;
   }
 
   .package-name {
-    font-size: 1.5rem;
-  }
-
-  .package-price {
     font-size: 1.6rem;
   }
 
+  .package-price {
+    font-size: 1.8rem;
+  }
+
+  .package-features li {
+    font-size: 0.9rem;
+  }
+
+  .service-card {
+    flex: 0 0 280px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop - Grid Layout */
+@media (min-width: 1025px) {
+  .packages-section {
+    padding: 80px 40px;
+  }
+
+  /* Hide scroll hints on desktop */
+  .scroll-hint-packages,
+  .scroll-hint-services {
+    display: none;
+  }
+
+  /* Change to grid on desktop */
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    overflow: visible;
+    padding: 20px 0 40px;
+  }
+
+  .package-card {
+    flex: none;
+    max-height: none;
+  }
+
+  .package-card.featured {
+    transform: scale(1.05);
+  }
+
+  .package-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+
+  .package-image {
+    height: 250px;
+  }
+
+  .package-content {
+    padding: 30px;
+  }
+
+  .package-name {
+    font-size: 1.8rem;
+  }
+
+  .package-price {
+    font-size: 2rem;
+  }
+
+  .package-description {
+    font-size: 1rem;
+  }
+
   .package-features {
-    max-height: 350px;
+    max-height: 400px;
+  }
+
+  .package-features li {
+    font-size: 0.95rem;
+  }
+
+  .package-button {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 1.3rem;
+  }
+
+  .featured-badge {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Services Grid on Desktop */
+  .services-section {
+    margin-top: 60px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .service-card {
+    flex: none;
+    padding: 30px;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
+  .service-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .packages-section {
+    padding: 100px 60px;
+  }
+
+  .packages-grid {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services-grid {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Extra Mobile Optimization */
+@media (max-width: 480px) {
+  .packages-section {
+    padding: 50px 15px;
+  }
+
+  .package-card {
+    flex: 0 0 290px;
+    max-height: 650px;
+  }
+
+  .package-image {
+    height: 160px;
+  }
+
+  .package-icon {
+    font-size: 2rem;
+  }
+
+  .package-content {
+    padding: 18px;
+  }
+
+  .package-name {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+
+  .package-guests {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .package-price {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .package-description {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .package-features {
+    margin-bottom: 12px;
+  }
+
+  .package-features li {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .check-icon {
+    font-size: 0.85rem;
+  }
+
+  .package-button {
+    padding: 11px;
+    font-size: 0.9rem;
+  }
+
+  .featured-badge {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    top: 10px;
+    right: 10px;
+  }
+
+  .services-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .service-card {
+    flex: 0 0 240px;
+    padding: 20px;
   }
 
   .service-icon {
     font-size: 2.2rem;
+    margin-bottom: 12px;
   }
 
   .service-card h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+
+  .scroll-hint-packages,
+  .scroll-hint-services {
+    font-size: 0.85rem;
   }
 }
 
+/* Smooth Animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -13,97 +13,105 @@ const Gallery = () => {
       title: "Corporate Conference 2024",
       category: "Corporate",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=900&fit=crop"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767795927/anni3_bsz0ly.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767795927/anni3_bsz0ly.jpg"
     },
     {
       id: 2,
       title: "Wedding Ceremony Highlights",
       category: "Wedding",
       type: "video",
-      thumbnail: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop",
-      media: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801696/decoVid1_x4w592.mp4",
+      media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801696/decoVid1_x4w592.mp4"
     },
     {
       id: 3,
       title: "Grand Wedding Reception",
       category: "Wedding",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=900&fit=crop"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767801579/deco4_rvpom7.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767801579/deco4_rvpom7.jpg"
     },
     {
       id: 4,
       title: "Product Launch Event",
       category: "Corporate",
       type: "video",
-      thumbnail: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop",
-      media: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801830/decoVid5_yknztl.mp4",
+      media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801830/decoVid5_yknztl.mp4"
     },
     {
       id: 5,
       title: "Traditional Haldi Ceremony",
       category: "Wedding",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1200&h=900&fit=crop"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767801576/deco2_fjqnur.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767801576/deco2_fjqnur.jpg"
     },
     {
       id: 6,
       title: "Birthday Celebration Party",
       category: "Social",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&h=900&fit=crop"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767801577/deco1_gs6j6l.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767801577/deco1_gs6j6l.jpg"
     },
     {
       id: 7,
       title: "Corporate Gala Dinner",
       category: "Corporate",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&h=900&fit=crop"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767795969/anni5_cv8lcc.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767795969/anni5_cv8lcc.jpg"
     },
     {
       id: 8,
       title: "Cultural Festival Event",
       category: "Cultural",
       type: "video",
-      thumbnail: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop",
-      media: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801721/decoVid4_g6hqdw.mp4",
+      media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801721/decoVid4_g6hqdw.mp4"
     },
     {
       id: 9,
       title: "Sangeet Night Performance",
       category: "Wedding",
       type: "video",
-      thumbnail: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop",
-      media: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801741/decoVid3_flbrht.mp4",
+      media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801741/decoVid3_flbrht.mp4"
     },
     {
       id: 10,
       title: "Elegant Mandap Decoration",
       category: "Wedding",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1200&h=900&fit=crop"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767793874/birthday6_m89z5s.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767793874/birthday6_m89z5s.jpg"
     },
     {
       id: 11,
       title: "Anniversary Celebration",
       category: "Social",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1200&h=900&fit=crop"
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767799241/mehndi3_lsk7r0.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767799241/mehndi3_lsk7r0.jpg"
     },
     {
       id: 12,
       title: "Team Building Event",
       category: "Corporate",
       type: "image",
-      thumbnail: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=600&fit=crop",
-      media: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&h=900&fit=crop"
-    }
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767797308/haldi4_ylts8p.jpg",
+      media: "https://res.cloudinary.com/ddktwy6ee/image/upload/v1767797308/haldi4_ylts8p.jpg"
+    },
+    {
+      id: 9,
+      title: "Sangeet Night Performance",
+      category: "Wedding",
+      type: "video",
+      thumbnail: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801718/decoVid2_j7jzkp.mp4",
+      media: "https://res.cloudinary.com/ddktwy6ee/video/upload/v1767801718/decoVid2_j7jzkp.mp4"
+    },
   ];
 
   const filteredItems = galleryItems.filter(item => {
